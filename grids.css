@@ -39,7 +39,11 @@
     background-color: cornflowerblue;
 }
 
+<<<<<<< HEAD
  @media (max-width: 800px)  {
+=======
+ @media (max-width: 800px) {
+>>>>>>> 7e1d4e6382eb63d60343f7b13fcb8af0fc26fde2
     .container {  
         grid-template-areas: 
             "header header header"
@@ -65,5 +69,12 @@
         "footer footer footer" 
     }
 }
+
+@media (max-width:600px) (min-width:500px) {
+    .container {
+        grid-template-areas:
+        "header header header"
+    "sidebar-1 content sidebar-2"
+    "footer footer footer" 
  /* make it responsive for tablet and mobile */
 
