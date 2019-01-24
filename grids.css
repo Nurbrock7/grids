@@ -12,21 +12,19 @@
 .header {
     grid-area: header;
     background-color: brown;
-    padding: 20px;
-    margin: 20px;
+    pa
 }
 
 .footer{
     grid-area: footer;
     background-color: yellow;
-    padding: 20px;
-    margin: 20px;
+   
 }
 
 .sidebar-1 {
     grid-area: sidebar-1;
     background-color: blue;
-    margin: 20px;
+    
     
 
 }
@@ -41,21 +39,30 @@
     background-color: cornflowerblue;
 }
 
- @media (max-width: 700px) {
+ @media (max-width: 800px)  {
     .container {  
         grid-template-areas: 
-            "content content content"
-            "sidebar-1 sidebar-1 sidebar-2"
-            "footer footer footer" 
+            "header header header"
+            "sidebar-1 content sidebar-2"
+            "sidebar-1 footer sidebar-1 " 
     }
 }
 
+@media (max-width:700px) and (min-width:401px) {
+    .container {
+        grid-template-areas: 
+        "header header header"
+        "sidebar-1 content sidebar-2"
+        "footer footer footer"
+    }
+}
 @media (max-width:400px) {
     .container {
         grid-template-areas:
-        "header header header"
-    "sidebar-1 content sidebar-2"
-    "footer footer footer" 
+        "header header header"  
+        "content content content"
+        "sidebar-1 sidebar-1 sidebar-2"
+        "footer footer footer" 
     }
 }
  /* make it responsive for tablet and mobile */
